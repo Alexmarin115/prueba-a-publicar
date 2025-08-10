@@ -1,0 +1,104 @@
+/* Fuente moderna similar a Apple */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: linear-gradient(to bottom right, #0a1f33, #112a40);
+    color: #f5f5f7;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal */
+form {
+    max-width: 450px;
+    margin: 80px auto;
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+/* Etiquetas */
+label {
+    font-size: 0.95em;
+    font-weight: 500;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Campos de entrada */
+input, textarea, button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1em;
+    font-family: inherit;
+}
+
+/* Inputs y textarea */
+input, textarea {
+    background: rgba(255, 255, 255, 0.1);
+    color: #f5f5f7;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+input:focus, textarea:focus {
+    background: rgba(255, 255, 255, 0.15);
+    outline: none;
+    box-shadow: 0 0 10px rgba(100, 200, 255, 0.5);
+}
+
+/* Botones */
+button {
+    background: linear-gradient(135deg, #007aff, #0051a8);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #0051a8, #003f85);
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+/* Botón limpiar */
+button[type="reset"] {
+    background: rgba(255, 255, 255, 0.2);
+    color: #f5f5f7;
+}
+
+button[type="reset"]:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Animación de entrada */
+form {
+    animation: fadeIn 0.6s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
